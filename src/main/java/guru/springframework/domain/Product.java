@@ -1,21 +1,17 @@
 package guru.springframework.domain;
 
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
-import static sun.plugin.javascript.navig.JSType.Document;
 
-/**
- * Created by jt on 1/10/17.
- */
 @Entity
 public class Product {
 
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long _id;
     private String description;
